@@ -158,6 +158,12 @@ cnc.sendMove = function(cmd) {
     fn && fn();
 };
 
+cnc.customHoming = function() {
+    controller.command('gcode', '$H');
+    controller.command('gcode', 'G91 G0 X-369 Y-339');
+    controller.command('gcode', 'G10 P0 L20 X0 Y0');
+};
+
 controller.on('serialport:read', function(data) {
     var style = 'font-weight: bold; line-height: 20px; padding: 2px 4px; border: 1px solid; color: #222; background: #F5F5F5';
     console.log('%cR%c', style, '', data);
