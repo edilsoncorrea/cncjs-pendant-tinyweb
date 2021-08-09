@@ -164,6 +164,17 @@ cnc.customHoming = function() {
     controller.command('gcode', 'G10 P0 L20 X0 Y0');
 };
 
+cnc.customProbe = function() {
+    controller.command('gcode', 'G38.2 Z-30 F1');
+    controller.command('gcode', 'G92 Z10');
+    controller.command('gcode', 'G0 Z20');
+};
+
+cnc.customPark = function() {
+    controller.command('gcode', '$H');
+    controller.command('gcode', 'G91 G0 X-369');
+};
+
 controller.on('serialport:read', function(data) {
     var style = 'font-weight: bold; line-height: 20px; padding: 2px 4px; border: 1px solid; color: #222; background: #F5F5F5';
     console.log('%cR%c', style, '', data);
