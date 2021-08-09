@@ -351,7 +351,7 @@
                     <button
                         type="button"
                         class="btn btn-default homing"
-                        title="My Homing"
+                        title="Homing"
                         onclick="cnc.controller.command('gcode', 'G92 X0')">
                         My Homing
                     </button>
@@ -360,8 +360,8 @@
                     <button
                         type="button"
                         class="btn btn-default probe"
-                        title="My Probe"
-                        onclick="cnc.controller.command('gcode', 'G92 X0')">
+                        title="Probe"
+                        onclick="cnc.controller.command('gcode', 'G91 G38.2 Z-10 F20 G90 G10 L20 P1 Z10 G91 G0 Z4 G90')">
                         My Probe
                     </button>
                 </div>
