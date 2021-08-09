@@ -324,29 +324,6 @@
                         Y0
                     </button>
                 </div>
-            </div>
-
-            <div class="row no-gutter">
-                </div><div class="col-xs-3">
-                    <button
-                        type="button"
-                        class="btn btn-default g28"
-                        title="G28"
-                        onclick="cnc.sendMove('G28')"
-                    >
-                        G28
-                    </button>
-                </div>
-                <div class="col-xs-3">
-                    <button
-                        type="button"
-                        class="btn btn-default g30"
-                        title="G30"
-                        onclick="cnc.sendMove('G30')"
-                    >
-                        G30
-                    </button>
-                </div>
                 <div class="col-xs-3">
                     <button
                         type="button"
@@ -365,6 +342,56 @@
                         Probe
                     </button>
                 </div>
+            </div>
+
+            <div class="row no-gutter">
+                </div><div class="col-xs-2">
+                    <button
+                        type="button"
+                        class="btn btn-default g28"
+                        title="G28"
+                        onclick="cnc.sendMove('G28')"
+                    >
+                        G28
+                    </button>
+                </div>
+                <div class="col-xs-2">
+                    <button
+                        type="button"
+                        class="btn btn-default g30"
+                        title="G30"
+                        onclick="cnc.sendMove('G30')"
+                    >
+                        G30
+                    </button>
+                </div>
+                <div class="col-xs-2">
+                    <button
+                        type="button"
+                        class="btn btn-default"
+                        title="G92 X0"
+                        onclick="cnc.controller.command('gcode', 'G92 X0')">
+                        G92 X0
+                    </button>
+                </div>
+                <div class="col-xs-2">
+                    <button
+                        type="button"
+                        class="btn btn-default"
+                        title="G92 Y0"
+                        onclick="cnc.controller.command('gcode', 'G92 Y0')">
+                        G92 Y0
+                    </button>
+                </div>
+                <div class="col-xs-2">
+                    <button
+                        type="button"
+                        class="btn btn-default"
+                        title="G92 Z0"
+                        onclick="cnc.controller.command('gcode', 'G92 Z0')">
+                        G92 Z0
+                    </button>
+                </div>                
             </div>
 
             <div class="col-xs-4">
@@ -400,33 +427,7 @@
                         <i class="fa fa-unlock"></i> Disable Motors
                     </button>
                 </div>
-                <div class="col-xs-2">
-                    <button
-                        type="button"
-                        class="btn btn-default"
-                        title="G92 X0"
-                        onclick="cnc.controller.command('gcode', 'G92 X0')">
-                        G92 X0
-                    </button>
-                </div>
-                <div class="col-xs-2">
-                    <button
-                        type="button"
-                        class="btn btn-default"
-                        title="G92 Y0"
-                        onclick="cnc.controller.command('gcode', 'G92 Y0')">
-                        G92 Y0
-                    </button>
-                </div>
-                <div class="col-xs-2">
-                    <button
-                        type="button"
-                        class="btn btn-default"
-                        title="G92 Z0"
-                        onclick="cnc.controller.command('gcode', 'G92 Z0')">
-                        G92 Z0
-                    </button>
-                </div>
+
                 <div class="col-xs-2">
                     <button
                         type="button"
