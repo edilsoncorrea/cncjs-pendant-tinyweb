@@ -172,7 +172,7 @@ cnc.customProbe = function() {
 
 cnc.customPark = function() {
     controller.command('gcode', '$H');
-    controller.command('gcode', 'G91 G0 X-369');
+    controller.command('gcode', 'G91 G0 X-369 Z-9');
 };
 
 controller.on('serialport:read', function(data) {
