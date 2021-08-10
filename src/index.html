@@ -345,7 +345,7 @@
             </div>
 
             <div class="row no-gutter">
-                <div class="col-xs-4">
+                <div class="col-xs-3">
                     <button
                         type="button"
                         class="btn btn-default"
@@ -354,7 +354,7 @@
                         G92 X0
                     </button>
                 </div>
-                <div class="col-xs-4">
+                <div class="col-xs-3">
                     <button
                         type="button"
                         class="btn btn-default"
@@ -363,7 +363,7 @@
                         G92 Y0
                     </button>
                 </div>
-                <div class="col-xs-4">
+                <div class="col-xs-3">
                     <button
                         type="button"
                         class="btn btn-default"
@@ -372,13 +372,22 @@
                         G92 Z0
                     </button>
                 </div>                
+                <div class="col-xs-3">
+                    <button
+                        type="button"
+                        class="btn btn-default"
+                        title="Auto level PCB"
+                        onclick="cnc.controller.command('gcode', '(#autolevel)')">
+                        Level
+                    </button>
+                </div>                
             </div>
 
             <div class="row no-gutter">
-                </div><div class="col-xs-3">
+                <div class="col-xs-3">
                     <button
                         type="button"
-                        class="btn btn-default g28"
+                        class="btn btn-default"
                         title="G28"
                         onclick="cnc.sendMove('G28')"
                     >
@@ -388,7 +397,7 @@
                 <div class="col-xs-3">
                     <button
                         type="button"
-                        class="btn btn-default g30"
+                        class="btn btn-default"
                         title="G30"
                         onclick="cnc.sendMove('G30')"
                     >
@@ -398,7 +407,7 @@
                 <div class="col-xs-3">
                     <button
                         type="button"
-                        class="btn btn-default park"
+                        class="btn btn-default"
                         title="Park"
                         onclick="cnc.customPark()"
                     >
@@ -408,7 +417,7 @@
                 <div class="col-xs-3">
                     <button
                         type="button"
-                        class="btn btn-default unlock"
+                        class="btn btn-default"
                         title="Unlock"
                         onclick="cnc.customUnlock()">
                         Unlock
