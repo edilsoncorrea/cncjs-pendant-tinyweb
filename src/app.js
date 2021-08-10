@@ -175,6 +175,11 @@ cnc.customPark = function() {
     controller.command('gcode', 'G91 G0 X-369 Z-9');
 };
 
+cnc.customUnlock = function() {
+    controller.command('gcode', '$H');
+    controller.command('gcode', '$X');
+};
+
 controller.on('serialport:read', function(data) {
     var style = 'font-weight: bold; line-height: 20px; padding: 2px 4px; border: 1px solid; color: #222; background: #F5F5F5';
     console.log('%cR%c', style, '', data);
