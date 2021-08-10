@@ -176,8 +176,8 @@ cnc.customPark = function() {
 };
 
 cnc.customUnlock = function() {
-    controller.command('gcode', '$H');
-    controller.command('gcode', '$X');
+    controller.command('reset');
+    controller.command('unlock');
 };
 
 controller.on('serialport:read', function(data) {
