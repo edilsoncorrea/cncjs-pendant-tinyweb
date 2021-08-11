@@ -165,7 +165,7 @@ cnc.customHoming = function() {
 };
 
 cnc.customProbe = function() {
-    controller.command('gcode', 'G38.2 Z-30 F1');
+    controller.command('gcode', 'G38.2 Z-16 F20');
     controller.command('gcode', 'G92 Z10');
     controller.command('gcode', 'G0 Z20');
 };
